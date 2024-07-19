@@ -64,7 +64,7 @@ Resources:
       DatabaseName: !Ref DbName
       Engine: aurora-postgresql
       EngineMode: serverless
-      EngineVersion: 10.2
+      EngineVersion: 13.11
       Port: 5432
       StorageEncrypted: true
       ScalingConfiguration:
@@ -82,7 +82,7 @@ Resources:
     Type: "AWS::RDS::DBClusterParameterGroup"
     Properties:
       Description: "CloudFormation Aurora Cluster Parameter Group"
-      Family: aurora-postgresql10
+      Family: aurora-postgresql13
       Parameters:
         timezone: UTC
 
